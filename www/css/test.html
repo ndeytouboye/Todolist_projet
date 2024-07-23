@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page d'inscription</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="column left">
+            <h2>Bienvenue</h2>
+            <p>Veuillez vous inscrire pour accéder à notre site. Remplissez le formulaire à droite pour créer votre compte.</p>
+        </div>
+        <div class="column right">
+            <h2>Inscription</h2>
+            <form method="POST">
+                <label for="username">Nom d'utilisateur:</label><br>
+                <input type="text" id="username" name="username" required><br>
+                <label for="password">Mot de passe:</label><br>
+                <input type="password" id="password" name="password" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <input type="submit" value="S'inscrire">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
